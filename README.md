@@ -4,7 +4,8 @@ pasted meme
 
 Added;
 Flip AA,
-Some Anti Aims / changed anti aims
+Some Anti Aims / changed anti aims,
+New menu
 
 
 Some shit that might not work;
