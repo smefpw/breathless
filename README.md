@@ -3,7 +3,7 @@ pasted meme
 
 
 Added;
-Flip AA,
+Flip AA (fakehead),
 Some Anti Aims / changed anti aims,
 New menu
 
@@ -11,7 +11,8 @@ New menu
 Some shit that might not work;
 Legitbot,
 LBY Indicator,
-Flip AA (doesn't work on certain aa's (fake wont flip))
+Flip AA (fakehead only works on certain aa's),
+Skinchanger
 
 Removed;
 Moonwalk (private shit),
