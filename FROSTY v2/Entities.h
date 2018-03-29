@@ -777,7 +777,7 @@ public:
 	float GetInaccuracy() {
 		if (!this) return 0;
 		typedef float(__thiscall* tFunc)(void*);
-		return call_vfunc<tFunc>(this, 469)(this);
+		return call_vfunc<tFunc>(this, 470)(this);
 	}
 
 
@@ -789,7 +789,7 @@ public:
 
 
 	void UpdateAccuracyPenalty(CBaseCombatWeapon *pWeapon) {
-		DWORD dwUpdateVMT = (*reinterpret_cast< PDWORD_PTR* >(pWeapon))[470];
+		DWORD dwUpdateVMT = (*reinterpret_cast< PDWORD_PTR* >(pWeapon))[471];
 		return ((void(__thiscall*)(CBaseCombatWeapon*)) dwUpdateVMT)(pWeapon);
 	}
 
@@ -799,7 +799,7 @@ public:
 		if (!this)
 			return nullptr;
 		typedef CSWeaponInfo*(__thiscall* tGetCSWpnData)(void*);
-		return call_vfunc<tGetCSWpnData>(this, 446)(this);
+		return call_vfunc<tGetCSWpnData>(this, 447)(this);
 	}
 
 	bool IsInReload()
