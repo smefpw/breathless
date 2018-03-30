@@ -252,7 +252,7 @@ public:
 	studiohdr_t* GetStudiomodel(const model_t* mod)
 	{
 		typedef studiohdr_t*(__stdcall* oGetStudiomodel)(const model_t*);
-		return call_vfunc<oGetStudiomodel>(this, 30)(mod);
+		return call_vfunc<oGetStudiomodel>(this, 32)(mod);
 	}
 };
 
