@@ -438,7 +438,7 @@ enum CSGOHitboxID : int
 {
 	Head = 0,
 	Neck,
-	NeckLower,
+	//NeckLower,
 	Pelvis,
 	Stomach,
 	LowerChest,
@@ -777,19 +777,19 @@ public:
 	float GetInaccuracy() {
 		if (!this) return 0;
 		typedef float(__thiscall* tFunc)(void*);
-		return call_vfunc<tFunc>(this, 470)(this);
+		return call_vfunc<tFunc>(this, 468)(this); //470
 	}
 
 
 	float GetSpread() {
 		if (!this) return 0;
 		typedef float(__thiscall* tFunc)(void*);
-		return call_vfunc<tFunc>(this, 439)(this);
+		return call_vfunc<tFunc>(this, 437)(this); //439
 	}
 
 
 	void UpdateAccuracyPenalty(CBaseCombatWeapon *pWeapon) {
-		DWORD dwUpdateVMT = (*reinterpret_cast< PDWORD_PTR* >(pWeapon))[471];
+		DWORD dwUpdateVMT = (*reinterpret_cast< PDWORD_PTR* >(pWeapon))[469]; //471
 		return ((void(__thiscall*)(CBaseCombatWeapon*)) dwUpdateVMT)(pWeapon);
 	}
 
@@ -799,7 +799,7 @@ public:
 		if (!this)
 			return nullptr;
 		typedef CSWeaponInfo*(__thiscall* tGetCSWpnData)(void*);
-		return call_vfunc<tGetCSWpnData>(this, 447)(this);
+		return call_vfunc<tGetCSWpnData>(this, 445)(this); //447
 	}
 
 	bool IsInReload()
