@@ -86,7 +86,7 @@ void misc::OnCreateMove(CInput::CUserCmd *cmd, C_BaseEntity *local)
 		case 36: setclantag("gamesense         "); break;
 		case 37: setclantag("amesense          "); break;
 		case 38: setclantag("mesense           "); break;
-		case 39: setclantag("esense            ");break;
+		case 39: setclantag("esense            "); break;
 		case 40: setclantag("sense             "); break;
 		case 41: setclantag("ense              "); break;
 		case 42: setclantag("nse               "); break;
