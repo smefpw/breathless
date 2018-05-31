@@ -17,163 +17,163 @@ struct Variables
 {
 	Variables()
 	{
-
+	
 	}
 
 	struct Ragebot_s
 	{
-		bool	MainSwitch;
-		bool 	Enabled;
-		bool 	AutoFire;
-		float 	FOV;
-		bool 	Silent;
-		bool	AutoPistol;
-		int		KeyPress;
-		bool	AimStep;
+		bool MainSwitch;
+		bool Enabled;
+		bool AutoFire;
+		float FOV;
+		bool  Silent;
+		bool AutoPistol;
+		int KeyPress;
+		bool AimStep;
 
 		//AA Builder 
 		//THESE NOW BECOME WHAT I WILL SET DEPENDING ON THE MVOEMENT TYPE EXACMPLE: IF WERE WALKING { JITTER = WALK_JITTER; } //LESS CODE!
-		bool	BuilderAAs;
-		bool	Jitter;
-		bool	FJitter;
-		bool	LBYBreaker;
-		float	BuilderReal;
-		float	BuilderFake;
-		float	BuilderPitch;
-		float	JitterRange;
-		float	FJitterRange;
+		bool BuilderAAs;
+		bool Jitter;
+		bool FJitter;
+		bool LBYBreaker;
+		float BuilderReal;
+		float BuilderFake;
+		float BuilderPitch;
+		float JitterRange;
+		float FJitterRange;
 
 
 		//walking builder aa's
-		bool	walk_BuilderAAs;
-		bool	walk_Jitter;
-		bool	walk_FJitter;
-		bool	walk_LBYBreaker;
-		float	walk_BuilderReal;
-		float	walk_BuilderFake;
-		float	walk_BuilderPitch;
-		float	walk_JitterRange;
-		float	walk_FJitterRange;
+		bool walk_BuilderAAs;
+		bool walk_Jitter;
+		bool walk_FJitter;
+		bool walk_LBYBreaker;
+		float walk_BuilderReal;
+		float walk_BuilderFake;
+		float walk_BuilderPitch;
+		float walk_JitterRange;
+		float walk_FJitterRange;
 
 		//running builder aa's
-		bool	run_BuilderAAs;
-		bool	run_Jitter;
-		bool	run_FJitter;
-		bool	run_LBYBreaker;
-		float	run_BuilderReal;
-		float	run_BuilderFake;
-		float	run_BuilderPitch;
-		float	run_JitterRange;
-		float	run_FJitterRange;
+		bool run_BuilderAAs;
+		bool run_Jitter;
+		bool run_FJitter;
+		bool run_LBYBreaker;
+		float run_BuilderReal;
+		float run_BuilderFake;
+		float run_BuilderPitch;
+		float run_JitterRange;
+		float run_FJitterRange;
 
 
 		//crouching builder aa's
-		bool	crouch_BuilderAAs;
-		bool	crouch_Jitter;
-		bool	crouch_FJitter;
-		bool	crouch_LBYBreaker;
-		float	crouch_BuilderReal;
-		float	crouch_BuilderFake;
-		float	crouch_BuilderPitch;
-		float	crouch_JitterRange;
-		float	crouch_FJitterRange;
+		bool crouch_BuilderAAs;
+		bool crouch_Jitter;
+		bool crouch_FJitter;
+		bool crouch_LBYBreaker;
+		float crouch_BuilderReal;
+		float crouch_BuilderFake;
+		float crouch_BuilderPitch;
+		float crouch_JitterRange;
+		float crouch_FJitterRange;
 
 		
 		//fakewalk builder aa's
-		bool	fwalk_BuilderAAs;
-		bool	fwalk_Jitter;
-		bool	fwalk_FJitter;
-		bool	fwalk_LBYBreaker;
-		float	fwalk_BuilderReal;
-		float	fwalk_BuilderFake;
-		float	fwalk_BuilderPitch;
-		float	fwalk_JitterRange;
-		float	fwalk_FJitterRange;
+		bool fwalk_BuilderAAs;
+		bool fwalk_Jitter;
+		bool fwalk_FJitter;
+		bool fwalk_LBYBreaker;
+		float fwalk_BuilderReal;
+		float fwalk_BuilderFake;
+		float fwalk_BuilderPitch;
+		float fwalk_JitterRange;
+		float fwalk_FJitterRange;
 
 		
 		//standing builder aa's
-		bool	stand_BuilderAAs;
-		bool	stand_Jitter;
-		bool	stand_FJitter;
-		bool	stand_LBYBreaker;
-		float	stand_BuilderReal;
-		float	stand_BuilderFake;
-		float	stand_BuilderPitch;
-		float	stand_JitterRange;
-		float	stand_FJitterRange;
+		bool stand_BuilderAAs;
+		bool stand_Jitter;
+		bool stand_FJitter;
+		bool stand_LBYBreaker;
+		float stand_BuilderReal;
+		float stand_BuilderFake;
+		float stand_BuilderPitch;
+		float stand_JitterRange;
+		float stand_FJitterRange;
 
 
 		int flip_aa;
 
 		bool ayywarecrasher = false;
 
-		bool	EnabledAntiAim;
-		int		SubAATabs;
-		bool	PreAAs;
-		int		Pitch;
-		int		YawTrue;
-		int		YawFake;
-		int		YawTrueMove;
-		float	PitchAdder;
-		float	YawTrueAdder;
-		float	YawFakeAdder;
-		float	YawFakeMove;
-		bool	AtTarget;
-		bool	Edge;
-		bool	KnifeAA;
-		bool	FakeLag;
-		int		FakeLagAmt;
+		bool EnabledAntiAim;
+		int SubAATabs;
+		bool PreAAs;
+		int Pitch;
+		int YawTrue;
+		int YawFake;
+		int YawTrueMove;
+		float PitchAdder;
+		float YawTrueAdder;
+		float YawFakeAdder;
+		float YawFakeMove;
+		bool AtTarget;
+		bool Edge;
+		bool KnifeAA;
+		bool FakeLag;
+		int FakeLagAmt;
 
 		// Pitch  PitchAdder  YawTrue  YawFakeAdder  YawFake  YawFakeAdder
 
 		//walking prebuilt aa
-		bool	walk_PreAAs;
-		int		walk_Pitch;
-		float	walk_PitchAdder;
-		int		walk_YawTrue;
-		float	walk_YawTrueAdder;
-		int		walk_YawFake;
-		float	walk_YawFakeAdder;
+		bool walk_PreAAs;
+		int walk_Pitch;
+		float walk_PitchAdder;
+		int walk_YawTrue;
+		float walk_YawTrueAdder;
+		int walk_YawFake;
+		float walk_YawFakeAdder;
 
 
 		//running prebuilt aa
-		bool	run_PreAAs;
-		int		run_Pitch;
-		float	run_PitchAdder;
-		int		run_YawTrue;
-		float	run_YawTrueAdder;
-		int		run_YawFake;
-		float	run_YawFakeAdder;
+		bool run_PreAAs;
+		int run_Pitch;
+		float run_PitchAdder;
+		int run_YawTrue;
+		float run_YawTrueAdder;
+		int run_YawFake;
+		float run_YawFakeAdder;
 
 		
 		//crouching prebuilt aa
-		bool	crouch_PreAAs;
-		int		crouch_Pitch;
-		float	crouch_PitchAdder;
-		int		crouch_YawTrue;
-		float	crouch_YawTrueAdder;
-		int		crouch_YawFake;
-		float	crouch_YawFakeAdder;
+		bool crouch_PreAAs;
+		int crouch_Pitch;
+		float crouch_PitchAdder;
+		int crouch_YawTrue;
+		float crouch_YawTrueAdder;
+		int crouch_YawFake;
+		float crouch_YawFakeAdder;
 
 
 		//fakewalk prebuilt aa fwalk
-		bool	fwalk_PreAAs;
-		int		fwalk_Pitch;
-		float	fwalk_PitchAdder;
-		int		fwalk_YawTrue;
-		float	fwalk_YawTrueAdder;
-		int		fwalk_YawFake;
-		float	fwalk_YawFakeAdder;
+		bool fwalk_PreAAs;
+		int fwalk_Pitch;
+		float fwalk_PitchAdder;
+		int fwalk_YawTrue;
+		float fwalk_YawTrueAdder;
+		int fwalk_YawFake;
+		float fwalk_YawFakeAdder;
 
 		
 		//standing prebuilt aa's 
-		bool	stand_PreAAs;
-		int		stand_Pitch;
-		float	stand_PitchAdder;
-		int		stand_YawTrue;
-		float	stand_YawTrueAdder;
-		int		stand_YawFake;
-		float	stand_YawFakeAdder;
+		bool stand_PreAAs;
+		int stand_Pitch;
+		float stand_PitchAdder;
+		int stand_YawTrue;
+		float stand_YawTrueAdder;
+		int stand_YawFake;
+		float stand_YawFakeAdder;
 
 
 		bool stand_allowflip;
@@ -194,48 +194,48 @@ struct Variables
 
 		int error_type;  //aa warning variable
 
-		bool	FriendlyFire;
-		int		Hitbox;
-		int		Hitscan;
-		float	Pointscale;
-		bool	Multipoint;
-		float	Multipoints;
+		bool FriendlyFire;
+		int Hitbox;
+		int Hitscan;
+		float Pointscale;
+		bool Multipoint;
+		float Multipoints;
 
-		bool	AntiRecoil;
-		bool	AutoWall;
-		bool	AutoStop;
-		int		autostopkey;
-		bool	AutoCrouch;
-		bool	AutoScope;
-		float	MinimumDamageSniper;
-		float	MinimumDamageRifle;
-		float	MinimumDamagePistol;
-		float	MinimumDamageHeavy;
-		float	MinimumDamageSmg;
-		float	MinimumDamageRevolver;
-		bool	Hitchance;
-		float	HitchanceSniper;
-		float	HitchancePistol;
-		float	HitchanceRifle;
-		float	HitchanceHeavy;
-		float	HitchanceSmgs;
-		float	HitchanceRevolver;
-		bool	Resolver;
-		bool	FakeLagFix;
-		bool	PosAdjust;
-		bool	playerlist;
-		int		BAIMkey;
-		float	bruteAfterX;
+		bool AntiRecoil;
+		bool AutoWall;
+		bool AutoStop;
+		int autostopkey;
+		bool AutoCrouch;
+		bool AutoScope;
+		float MinimumDamageSniper;
+		float MinimumDamageRifle;
+		float MinimumDamagePistol;
+		float MinimumDamageHeavy;
+		float MinimumDamageSmg;
+		float MinimumDamageRevolver;
+		bool Hitchance;
+		float HitchanceSniper;
+		float HitchancePistol;
+		float HitchanceRifle;
+		float HitchanceHeavy;
+		float HitchanceSmgs;
+		float HitchanceRevolver;
+		bool Resolver;
+		bool FakeLagFix;
+		bool PosAdjust;
+		bool playerlist;
+		int BAIMkey;
+		float bruteAfterX;
 
 		
-		bool	MovingAA; //eventually get rid of this
+		bool MovingAA; //eventually get rid of this
 		
 		//and replace with this
-		bool	AA_onRun;
-		bool	AA_onWalk;
-		bool	AA_onCrouch;
-		bool	AA_onFakeWalk;
-		bool	AA_onStand;
+		bool AA_onRun;
+		bool AA_onWalk;
+		bool AA_onCrouch;
+		bool AA_onFakeWalk;
+		bool AA_onStand;
 	} Ragebot;
 
 	struct
@@ -245,9 +245,9 @@ struct Variables
 		float backtrackTicks;
 		struct
 		{
-			bool 	Enabled;
-			bool AutoPistol;
-			bool	Resolver;
+		bool Enabled;
+		bool AutoPistol;
+		bool Resolver;
 
 		} Aimbot;
 
@@ -283,7 +283,7 @@ struct Variables
 
 		struct
 		{
-			bool	Enabled;
+			bool Enabled;
 			float Delay;
 			int Key = 6;
 			float hitchance;
@@ -391,10 +391,10 @@ struct Variables
 		bool antiuntrusted = true;
 		bool silentstealer;
 		int ragequit;
-		bool 	Bhop;
-		bool 	AutoStrafe;
+		bool Bhop;
+		bool AutoStrafe;
 		float MinVel;
-		int		AirStuckKey;
+		int AirStuckKey;
 		int lagexploit;
 		int lagexploitmultiplier = 3;
 		float lagexploitvalue;
@@ -404,7 +404,7 @@ struct Variables
 		int NameSpammer;
 		bool NameChangerFix;
 		bool NoName;
-		int		ChatSpamMode;
+		int ChatSpamMode;
 		bool ClantagChanger;
 		int ClanTagSpeed;
 		bool syncclantag;
@@ -456,12 +456,12 @@ struct Variables
 		class WeaponCFG
 		{
 		public:
-			bool ChangerEnabled = false;
-			int ChangerSkin = 0;
-			char ChangerName[32] = "";
-			int ChangerStatTrak = 0;
-			int ChangerSeed = 0;
-			float ChangerWear = 0;
+		bool ChangerEnabled = false;
+		int ChangerSkin = 0;
+		char ChangerName[32] = "";
+		int ChangerStatTrak = 0;
+		int ChangerSeed = 0;
+		float ChangerWear = 0;
 		};
 		WeaponCFG* W = new WeaponCFG[520];
 
@@ -473,15 +473,15 @@ struct Variables
 
 	struct
 	{
-		bool	Opened = false;
-		int 	Key;
-		int		rageSubtab;
-		int		ConfigFile = 0;
-		int		Theme = 0;
-		int		iTab;
-		bool	bShowTabs;
-		float   flMainAlpha;
-		float   flTabsAlpha;
+		bool Opened = false;
+		int Key;
+		int rageSubtab;
+		int ConfigFile = 0;
+		int Theme = 0;
+		int iTab;
+		bool bShowTabs;
+		float flMainAlpha;
+		float flTabsAlpha;
 		int currentWeapon;
 	} Menu;
 
