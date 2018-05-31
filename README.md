@@ -17,3 +17,8 @@ Skinchanger
 Removed;
 Moonwalk (private shit),
 Spookwalk (private shit)
+
+
+btw cheat is dead, no updates unless valve break it
+
+also uses VMT / VTABLE hooking so careful
