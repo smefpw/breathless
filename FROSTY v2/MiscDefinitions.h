@@ -792,7 +792,6 @@ struct ModelRenderInfo_t
 {
 	Vector origin;
 	Vector angles;
-	char pad[0x4]; // <-new
 	void *pRenderable;
 	const void *pModel;
 	const matrix3x4 *pModelToWorld;

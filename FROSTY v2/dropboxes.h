@@ -135,10 +135,10 @@ const char* aimBones[] =
 
 const char* configFiles[] =
 {
-    "Legit",
-    "HvH-Scout",
-    "HvH-Auto",
-    "Rage"
+	"Legit",
+	"Rage",
+	"HvH",
+	"Other"
 };
 const char* themes[] =
 {

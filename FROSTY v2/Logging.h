@@ -30,7 +30,7 @@ struct AppLog
 		ImGui::Begin(title, &p_open, ImVec2(400, 250), 0.3f);
 
 		ImGui::TextUnformatted(Buf.begin());
-		ImGui::SetScrollHere(1.0f);
+
 		ImGui::End();
 	}
 };

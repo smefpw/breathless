@@ -344,68 +344,68 @@ void CConfig::SetupValue(bool &value, bool def, std::string category, std::strin
 
 void CConfig::Save()
 {
-    static TCHAR path[MAX_PATH];
-    std::string folder, file;
- 
-    if (SUCCEEDED(SHGetFolderPath(NULL, CSIDL_MYDOCUMENTS, NULL, 0, path)))
-    {
- 
- 
-        folder = std::string(path) + ("\\\\");
-        switch (g_Options.Menu.ConfigFile)
-        {
-        case 0:
-            file = std::string(path) + ("\\\\") + std::string("Legit") + XorStr("");
-            break;
-        case 1:
-            file = std::string(path) + ("\\\\") + std::string("HvH-Scout") + XorStr("");
-            break;
-        case 2:
-            file = std::string(path) + ("\\\\") + std::string("HvH-Auto") + XorStr("");
-            break;
-        case 3:
-            file = std::string(path) + ("\\\\") + std::string("Rage") + XorStr("");
-            break;
-        }
- 
-    }
- 
-    CreateDirectory(folder.c_str(), NULL);
- 
-    for (auto value : ints)
-        WritePrivateProfileString(value->category.c_str(), value->name.c_str(), std::to_string(*value->value).c_str(), file.c_str());
- 
-    for (auto value : floats)
-        WritePrivateProfileString(value->category.c_str(), value->name.c_str(), std::to_string(*value->value).c_str(), file.c_str());
- 
-    for (auto value : bools)
-        WritePrivateProfileString(value->category.c_str(), value->name.c_str(), *value->value ? "true" : "false", file.c_str());
+	static TCHAR path[MAX_PATH];
+	std::string folder, file;
+
+	if (SUCCEEDED(SHGetFolderPath(NULL, CSIDL_MYDOCUMENTS, NULL, 0, path)))
+	{
+
+
+		folder = std::string(path) + ("\\breathless.cc\\");
+		switch (g_Options.Menu.ConfigFile)
+		{
+		case 0:
+			file = std::string(path) + ("\\breathless.cc\\") + std::string("Legit") + XorStr(".bcc");
+			break;
+		case 1:
+			file = std::string(path) + ("\\breathless.cc\\") + std::string("Rage") + XorStr(".bcc");
+			break;
+		case 2:
+			file = std::string(path) + ("\\breathless.cc\\") + std::string("HvH") + XorStr(".bcc");
+			break;
+		case 3:
+			file = std::string(path) + ("\\breathless.cc\\") + std::string("Other") + XorStr(".bcc");
+			break;
+		}
+
+	}
+
+	CreateDirectory(folder.c_str(), NULL);
+
+	for (auto value : ints)
+		WritePrivateProfileString(value->category.c_str(), value->name.c_str(), std::to_string(*value->value).c_str(), file.c_str());
+
+	for (auto value : floats)
+		WritePrivateProfileString(value->category.c_str(), value->name.c_str(), std::to_string(*value->value).c_str(), file.c_str());
+
+	for (auto value : bools)
+		WritePrivateProfileString(value->category.c_str(), value->name.c_str(), *value->value ? "true" : "false", file.c_str());
 }
- 
+
 void CConfig::Load()
 {
-    static TCHAR path[MAX_PATH];
-    std::string folder, file;
- 
-    if (SUCCEEDED(SHGetFolderPath(NULL, CSIDL_MYDOCUMENTS, NULL, 0, path)))
-    {
-        folder = std::string(path) + ("\\\\");
-        switch (g_Options.Menu.ConfigFile)
-        {
-        case 0:
-            file = std::string(path) + ("\\\\") + std::string("Legit") + XorStr("");;
-            break;
-        case 1:
-            file = std::string(path) + ("\\\\") + std::string("HvH-Scout") + XorStr("");;
-            break;
-        case 2:
-            file = std::string(path) + ("\\\\") + std::string("HvH-Auto") + XorStr("");;
-            break;
-        case 3:
-            file = std::string(path) + ("\\\\") + std::string("Rage") + XorStr("");;
-            break;
-        }
-    }
+	static TCHAR path[MAX_PATH];
+	std::string folder, file;
+
+	if (SUCCEEDED(SHGetFolderPath(NULL, CSIDL_MYDOCUMENTS, NULL, 0, path)))
+	{
+		folder = std::string(path) + ("\\breathless.cc\\");
+		switch (g_Options.Menu.ConfigFile)
+		{
+		case 0:
+			file = std::string(path) + ("\\breathless.cc\\") + std::string("Legit") + XorStr(".bcc");;
+			break;
+		case 1:
+			file = std::string(path) + ("\\breathless.cc\\") + std::string("Rage") + XorStr(".bcc");;
+			break;
+		case 2:
+			file = std::string(path) + ("\\breathless.cc\\") + std::string("HvH") + XorStr(".bcc");;
+			break;
+		case 3:
+			file = std::string(path) + ("\\breathless.cc\\") + std::string("Other") + XorStr(".bcc");;
+			break;
+		}
+	}
 
 	CreateDirectory(folder.c_str(), NULL);
 

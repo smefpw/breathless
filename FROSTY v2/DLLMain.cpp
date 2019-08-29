@@ -10,7 +10,7 @@ bool unload;
 
 bool on_dll_attach(void* base)
 {
-	U::OpenConsole("smef.cc -- breathless.cc");
+	U::OpenConsole("supremacy.gq");
 	
 	InitialiseInterfaces();
 	g_Netvars->GetNetvars();
@@ -22,6 +22,7 @@ bool on_dll_attach(void* base)
 	{
 		Sleep(1000);
 	}
+
 
 	UnloadProxy();
 	hooks::cleanup();

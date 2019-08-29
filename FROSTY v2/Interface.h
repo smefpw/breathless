@@ -390,6 +390,7 @@ void RenderInterface() {
 
 
 						ImGui::Checkbox(XorStr("Auto Fire"), &g_Options.Ragebot.AutoFire);
+
 					}
 					ImGui::EndChild();
 
@@ -846,6 +847,15 @@ void RenderInterface() {
 						if (ImGui::Button("Save Config")) Config->Save();
 
 						if (ImGui::Button("Load Config")) Config->Load();
+
+						ImGui::Spacing();
+						ImGui::Spacing();
+						ImGui::Spacing();
+						ImGui::Spacing();
+
+
+						ImGui::Combo(XorStr("Hitscan"), &g_Options.Ragebot.Hitscan, hitscan, ARRAYSIZE(hitscan));
+						ImGui::Combo(XorStr("Hitbox"), &g_Options.Ragebot.Hitbox, aimBones, ARRAYSIZE(aimBones));
 
 					}
 					ImGui::EndChild();

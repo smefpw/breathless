@@ -962,6 +962,32 @@ void ragebot::DoAntiAim(CInput::CUserCmd *pCmd, bool& bSendPacket)
 
 		}
 	}
+	//if (!(pLocal->GetFlags() & FL_ONGROUND))
+	//{
+	//	if (g_Options.Ragebot.break_in_air)
+	//	{
+	//		g_Options.Ragebot.BuilderAAs = false;
+	//		g_Options.Ragebot.Jitter = g_Options.Ragebot.stand_Jitter;
+	//		g_Options.Ragebot.FJitter = g_Options.Ragebot.stand_FJitter;
+	//		g_Options.Ragebot.LBYBreaker = g_Options.Ragebot.stand_LBYBreaker;
+	//		g_Options.Ragebot.BuilderReal = g_Options.Ragebot.stand_BuilderReal;
+	//		g_Options.Ragebot.BuilderFake = g_Options.Ragebot.stand_BuilderFake;
+	//		g_Options.Ragebot.BuilderPitch = g_Options.Ragebot.stand_BuilderPitch;
+	//		g_Options.Ragebot.JitterRange = g_Options.Ragebot.stand_JitterRange;
+	//		g_Options.Ragebot.FJitterRange = g_Options.Ragebot.stand_FJitterRange;
+
+	//		//prebuild stuff
+	//		g_Options.Ragebot.PreAAs = true;
+	//		g_Options.Ragebot.Pitch = g_Options.Ragebot.stand_Pitch;
+	//		g_Options.Ragebot.PitchAdder = g_Options.Ragebot.stand_PitchAdder;
+	//		g_Options.Ragebot.YawTrue = g_Options.Ragebot.stand_YawTrue - 180;
+	//		g_Options.Ragebot.YawFake = g_Options.Ragebot.stand_YawFake - 180;
+
+
+	//		g_Options.Ragebot.YawTrueAdder = g_Options.Ragebot.stand_YawTrueAdder;
+	//		g_Options.Ragebot.YawFakeAdder = g_Options.Ragebot.stand_YawFakeAdder;
+	//	}
+	//}
 
 
 
